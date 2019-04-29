@@ -23,7 +23,7 @@ class Status extends Component {
 
 handleSubmit(evt) {
 	evt.preventDefault();
-	var url = 'http://localhost:8090/status/' + this.state.orderType + '/' + this.state.orderId + '/' + this.state.timestamp;
+	var url = 'http://ec2-13-59-252-195.us-east-2.compute.amazonaws.com:8090/status/' + this.state.orderType + '/' + this.state.orderId + '/' + this.state.timestamp;
 	console.log(url);
 	fetch(url)
      .then(res => res.json())

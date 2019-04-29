@@ -24,7 +24,7 @@ class Upload extends Component {
   	
   	console.log(this.state.formD);
   	
-  	fetch('//localhost:8090/uploadFile', {
+  	fetch('http://ec2-13-59-252-195.us-east-2.compute.amazonaws.com:8090/uploadFile', {
       method: 'POST',
       body: this.state.formD
     })
